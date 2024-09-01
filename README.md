@@ -36,9 +36,9 @@ YourHR is a comprehensive web application designed to streamline the management 
 
 ## 🛠 Technology Stack
 - **Frontend:** React, Bootstrap, Formik, Yup, React Router
-- **Backend:** Node.js, Express.js, Firebase, JWT, Multer
-- **Database:** Firebase Firestore
-- **Storage:** Firebase Storage for resume uploads
+- **Backend:** Node.js, Express.js, Supabase, JWT, Multer
+- **Database:** Supabase Firestore
+- **Storage:** Supabase Storage for resume uploads
 - **Authentication:** JWT for secure token-based authentication
 - **Form Validation:** Formik and Yup
 
@@ -50,7 +50,7 @@ YourHR is a comprehensive web application designed to streamline the management 
 Ensure you have the following installed:
 - Node.js
 - npm (Node Package Manager)
-- Firebase account
+- Supabase account
 
 ### Steps
 
@@ -82,13 +82,9 @@ npm install
 Create a `.env` file in the `backend` directory and add the following:
 ```bash
 PORT=5000
-FIREBASE_API_KEY=<Your Firebase API Key>
-FIREBASE_AUTH_DOMAIN=<Your Firebase Auth Domain>
-FIREBASE_PROJECT_ID=<Your Firebase Project ID>
-FIREBASE_STORAGE_BUCKET=<Your Firebase Storage Bucket>
-FIREBASE_MESSAGING_SENDER_ID=<Your Firebase Messaging Sender ID>
-FIREBASE_APP_ID=<Your Firebase App ID>
-JWT_SECRET=<Your JWT Secret>
+SUPABASE_URL=<Your Supabase Project URL>
+SUPABASE_SERVICE_ROLE_KEY=<Your Supabase Service Role API Key>
+JWT_SECRET=<Your Supabase JWT Secret>
 ```
 
 ### Frontend:
@@ -119,7 +115,7 @@ The application will be accessible at `http://localhost:3000`.
 ---
 
 ## 🔧 Backend
-The backend is built using Node.js and Express.js, with Firebase handling the database and file storage.
+The backend is built using Node.js and Express.js, with Supabase handling the database and file storage.
 
 ### API Endpoints
 - `/api/auth/signup`: User registration.
@@ -132,7 +128,7 @@ The backend is built using Node.js and Express.js, with Firebase handling the da
 - **Error Handling Middleware:** Handles errors uniformly across the application.
 
 ### Services
-- **Firebase Service:** Manages interactions with Firebase for database queries and file storage.
+- **Supabase Service:** Manages interactions with Supabase for database queries and file storage.
 
 ### Controllers
 - **Auth Controller:** Handles signup and login logic.
