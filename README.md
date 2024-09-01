@@ -37,7 +37,7 @@ YourHR is a comprehensive web application designed to streamline the management 
 ## 🛠 Technology Stack
 - **Frontend:** React, Bootstrap, Formik, Yup, React Router
 - **Backend:** Node.js, Express.js, Supabase, JWT, Multer
-- **Database:** Supabase Firestore
+- **Database:** Supabase PostgreSQL database
 - **Storage:** Supabase Storage for resume uploads
 - **Authentication:** JWT for secure token-based authentication
 - **Form Validation:** Formik and Yup
